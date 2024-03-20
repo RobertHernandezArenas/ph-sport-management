@@ -1,19 +1,15 @@
 <script setup>
 import { RouterView } from 'vue-router';
-import MenuBar from '@/components/MenuBar.vue';
+import SelectorLang from './components/SelectorLang.vue';
+
 </script>
 
 <template>
-	<header>
-		<MenuBar />
-	</header>
+  <h1 class="animate animate__bounce">PH Sport Management</h1>
+<SelectorLang />
 
+  <span>{{ $t('home.newsletter.title') }}</span>
 	<RouterView />
 </template>
 
-<style scoped>
-header {
-	line-height: 1.5;
-	max-height: 100vh;
-}
-</style>
+<style scoped></style>
